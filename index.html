@@ -171,12 +171,16 @@
     <section id="projects">
       <h2>Applied Data Science Projects</h2>
       <ul class="papers" style="list-style: none; padding-left: 0;">
-        <li class="paper">
+        <li class="paper has-fig">
           <div class="paper-text">
             <p class="title"><a href="https://github.com/MahyarRezazadeh/ml-healthcare-demand-forecasting">ML for Healthcare Demand Prediction: Forecasting Hospital Occupancy and ED Volume</a></p>
             <p class="meta">One-week-ahead forecasts for about 2,800 US hospitals with a walk-forward evaluation of 13 model families, and a test of whether wildfire-smoke data improves the forecast.</p>
             <p class="paper-links"><a href="https://github.com/MahyarRezazadeh/ml-healthcare-demand-forecasting">Code and documentation (GitHub)</a></p>
           </div>
+          <figure class="paper-fig">
+            <a href="img/fig_hospital_forecast.webp"><img src="img/fig_hospital_forecast.webp" alt="Bar chart: machine-learning models reduce squared forecast error for next-week hospital bed occupancy by 17 to 21 percent relative to a no-change forecast; an autoregression reduces it by 15.5 percent and a 4-week average by 3.8 percent" loading="lazy"></a>
+            <figcaption><strong>Forecast gain by model.</strong> Each bar shows how much a model reduces squared forecast error for next week's inpatient bed occupancy, relative to assuming next week equals this week. <span class="key key-blue">Blue</span>: machine-learning models that use each hospital's recent occupancy and calendar terms. Grey: simple benchmarks. Out-of-sample test period, January 2023 to April 2024; 68,237 hospital-weeks from 1,000 US hospitals. Adding wildfire-smoke data did not improve any of these forecasts.</figcaption>
+          </figure>
         </li>
       </ul>
     </section>
